@@ -1,3 +1,34 @@
+let UserInput = document.querySelector('input');
+let duplicateField = document.querySelector('#duplicateField')
+
+
+UserInput.addEventListener('keyup', function(e) {
+    duplicateField.textContent = e.target.value
+})
+
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log(duplicateField.textContent);
+    duplicateField.textContent = '';
+    UserInput.value ='';
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // document.querySelector('input').onchange, function (event) => {
 //     event.target.value = UserInput;
 //     console.log(UserInput);
